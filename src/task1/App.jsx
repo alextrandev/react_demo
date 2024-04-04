@@ -1,15 +1,15 @@
 import './style.css'
+import './BasicComponent'
+import ParentComponent from './ParentComponent'
 
-const App1 = () => {
+
+function App1() {
   return (
     <main>
       <h1>My first React app</h1>
-      {/* Separate <h2> to ParentComponent file*/}
-      <h2>Parent Component</h2>
-      {/* Separate <p> to BasicComponent file*/}
-      <p>This is a basic React component!</p>
+      <ParentComponent/>
     </main>
   );
-};
+}
 
 export default App1;
