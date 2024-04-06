@@ -1,5 +1,6 @@
 // Your goal is to change the title, author, genre and reading status when the button in the App component is pressed
 // You DON'T need to fetch the values entered into the <input /> fields
+import Button from "./Button";
 import "./styles.css";
 
 // Please note: The Add book does not actually work!
@@ -31,7 +32,7 @@ function App5() {
         </select>
       </div>
 
-      <button>Add book</button>
+      <Button />
     </div>
   );
 }
