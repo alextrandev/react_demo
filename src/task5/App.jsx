@@ -2,13 +2,6 @@
 // You DON'T need to fetch the values entered into the <input /> fields
 import "./styles.css";
 
-export const book = {
-  title: "",
-  author: "",
-  genre: "",
-  isRead: true,
-};
-
 // Please note: The Add book does not actually work!
 // This exercise is just about practicing event handling
 // Ignore the inputs; you'll learn to handle user input later.
