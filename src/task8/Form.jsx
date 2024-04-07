@@ -22,7 +22,7 @@ function Form() {
     }
 
     return (
-       <form>
+       <form onChange={handleChange}>
             <label htmlFor="firstname">First name: </label>
             <input 
                 type="text"
@@ -30,7 +30,6 @@ function Form() {
                 id="firstname"
                 placeholder="John"
                 value={userInputs.firstname}
-                onChange={handleChange}
             />
             <label htmlFor="lastname">Lastname </label>
             <input
@@ -39,7 +38,6 @@ function Form() {
                 id="lastname"
                 placeholder="Doe"
                 value={userInputs.lastname}
-                onChange={handleChange}
             />
             <label htmlFor="phone">Phone no.: </label>
             <input
@@ -48,7 +46,6 @@ function Form() {
                 id="phone"
                 placeholder="0123456789"
                 value={userInputs.phone}
-                onChange={handleChange}
             />
             <label htmlFor="email">E-mail: </label>
             <input
@@ -57,7 +54,6 @@ function Form() {
                 id="email"
                 placeholder="example@example.com"
                 value={userInputs.email}
-                onChange={handleChange}
             />
             <label htmlFor="role">Role: </label>
             <input
@@ -66,7 +62,6 @@ function Form() {
                 id="role"
                 placeholder="Developer"
                 value={userInputs.role}
-                onChange={handleChange}
             />
             <button type="submit" onClick={handleSubmit}>Submit</button>
         </form>
