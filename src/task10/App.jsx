@@ -1,3 +1,4 @@
+import BookList from "./BookList";
 import "./styles.css";
 
 const App10 = () => {
@@ -6,6 +7,7 @@ const App10 = () => {
       <h1>List and keys</h1>
       {/* TODO: import BookList component to display the list of the books
        */}
+       <BookList />
     </main>
   );
 };
