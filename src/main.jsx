@@ -9,6 +9,7 @@ import App6 from './task6/App.jsx'
 import App7 from './task7/App.jsx'
 import App8 from './task8/App.jsx'
 import App9 from './task9/App.jsx'
+import App10 from './task10/App.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -21,5 +22,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App7 />
     <App8 />
     <App9 />
+    <App10 />
   </React.StrictMode>,
 )
