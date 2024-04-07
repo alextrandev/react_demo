@@ -20,8 +20,8 @@ const BookList = () => {
             title={book.title}
             author={book.author}
             description={book.description}
-            showDescription={activeBookId}
-            visibilityHandler={visibilityHandler}
+            showDescription={book.id == activeBookId}
+            visibilityHandler={() => visibilityHandler(book.id)}
         />
       )}
     </div>
