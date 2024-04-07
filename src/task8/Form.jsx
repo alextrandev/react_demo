@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-function Form() {
+function Form({handleSubmit}) {
     const [userInputs, setUserInputs] = useState({
         firstname: "",
         lastname: "",
@@ -14,11 +14,6 @@ function Form() {
             ...userInputs,
             [e.target.name]: e.target.value
         })
-    }
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(userInputs);
     }
 
     return (
@@ -63,7 +58,7 @@ function Form() {
                 placeholder="Developer"
                 value={userInputs.role}
             />
-            <button type="submit" onClick={handleSubmit}>Submit</button>
+            <button type="submit" onClick={() => handleSubmit(userInputs)}>Submit</button>
         </form>
     )
 }
