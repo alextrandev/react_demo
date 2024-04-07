@@ -24,7 +24,7 @@ function Form({handleSubmit}) {
                 name="firstname"
                 id="firstname"
                 placeholder="John"
-                value={userInputs.firstname}
+                defaultValue={userInputs.firstname}
             />
             <label htmlFor="lastname">Lastname </label>
             <input
@@ -32,7 +32,7 @@ function Form({handleSubmit}) {
                 name="lastname"
                 id="lastname"
                 placeholder="Doe"
-                value={userInputs.lastname}
+                defaultValue={userInputs.lastname}
             />
             <label htmlFor="phone">Phone no.: </label>
             <input
@@ -40,7 +40,7 @@ function Form({handleSubmit}) {
                 name="phone"
                 id="phone"
                 placeholder="0123456789"
-                value={userInputs.phone}
+                defaultValue={userInputs.phone}
             />
             <label htmlFor="email">E-mail: </label>
             <input
@@ -48,7 +48,7 @@ function Form({handleSubmit}) {
                 name="email"
                 id="email"
                 placeholder="example@example.com"
-                value={userInputs.email}
+                defaultValue={userInputs.email}
             />
             <label htmlFor="role">Role: </label>
             <input
@@ -56,7 +56,7 @@ function Form({handleSubmit}) {
                 name="role"
                 id="role"
                 placeholder="Developer"
-                value={userInputs.role}
+                defaultValue={userInputs.role}
             />
             <button type="submit" onClick={(e) => handleSubmit(userInputs, e)}>Submit</button>
         </form>
