@@ -58,7 +58,7 @@ function Form({handleSubmit}) {
                 placeholder="Developer"
                 value={userInputs.role}
             />
-            <button type="submit" onClick={() => handleSubmit(userInputs)}>Submit</button>
+            <button type="submit" onClick={(e) => handleSubmit(userInputs, e)}>Submit</button>
         </form>
     )
 }

@@ -6,8 +6,9 @@ import View from "./View";
 const App8 = () => {
     const [userInputs, setUserInputs] = useState()
 
-    const handleSubmit = (userInputs) => {
-        setUserInputs(userInputs);
+    const handleSubmit = (userInputs, e) => {
+        setUserInputs(userInputs)
+        e.preventDefault()
     }
 
   return (
