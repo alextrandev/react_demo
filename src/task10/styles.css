@@ -24,14 +24,12 @@ button {
 }
 
 button {
-    display: block;
     border: none;
     background-color: rgb(201, 201, 201);
-    padding: 0.8rem 1rem;
-    margin: 1rem;
-    border-radius: 30px;
+    border-radius: 5px;
     box-shadow: none;
-    display: inline-block;
+    width: 300px;
+    margin: 0;
 }
 
 button:hover {
@@ -43,6 +41,7 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+    width: 100%;
 }
 
 .card {
@@ -52,9 +51,10 @@ button:hover {
     padding: 0.5rem;
     align-self: start;
     min-height: 250px;
+    height: 40vh;
 }
 
 .description {
     text-align: left;
-    padding: 1rem;
+    padding: 0 2rem;
 }
